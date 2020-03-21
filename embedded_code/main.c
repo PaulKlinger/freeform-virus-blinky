@@ -13,6 +13,7 @@
 #include <avr/io.h>
 
 #include "sequence.h"
+#include "sars_cov_2_sequence.h"
 
 #define LIGHT_DURATION_MS 100
 #define INTERVAL_DURATION_MS 50
@@ -28,20 +29,7 @@ FUSES =
 	.WDTCFG = PERIOD_OFF_gc | WINDOW_OFF_gc,
 }; 
 
-typedef enum Base {
-    A = 0, // green
-    C = 1, // blue
-    G = 2, // yellow
-    T = 3  // red
-} Base;
 
-
-Base read_base(const struct sequence *seq, uint32_t i) {
-    uint8_t pos = 3 - i % 4;
-    uint8_t byte = seq->data[i / 4];
-    
-    return (Base) (byte >> (2 * pos)) & 0b00000011;
-}
 
 void show_base(Base b) {
     switch (b) {

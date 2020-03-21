@@ -18,6 +18,9 @@ Discarded input sections
  .text          0x00000000        0x0 build/default/production/sequence.o
  .data          0x00000000        0x0 build/default/production/sequence.o
  .bss           0x00000000        0x0 build/default/production/sequence.o
+ .text          0x00000000        0x0 build/default/production/sars_cov_2_sequence.o
+ .data          0x00000000        0x0 build/default/production/sars_cov_2_sequence.o
+ .bss           0x00000000        0x0 build/default/production/sars_cov_2_sequence.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
@@ -84,6 +87,7 @@ Address of section .data set to 0x803800
 LOAD C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
 LOAD build/default/production/main.o
 LOAD build/default/production/sequence.o
+LOAD build/default/production/sars_cov_2_sequence.o
                 0x00000001                __MPLAB_BUILD = 0x1
 START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
@@ -285,17 +289,17 @@ END GROUP
                 0x000000a0                __vector_20
                 0x000000a4                . = ALIGN (0x2)
  *(.text.*)
- .text.read_base
-                0x000000a4       0x40 build/default/production/main.o
-                0x000000a4                read_base
  .text.show_base
-                0x000000e4       0x28 build/default/production/main.o
-                0x000000e4                show_base
+                0x000000a4       0x28 build/default/production/main.o
+                0x000000a4                show_base
  .text.switch_off_leds
-                0x0000010c        0x8 build/default/production/main.o
-                0x0000010c                switch_off_leds
- .text.main     0x00000114       0x74 build/default/production/main.o
-                0x00000114                main
+                0x000000cc        0x8 build/default/production/main.o
+                0x000000cc                switch_off_leds
+ .text.main     0x000000d4       0x74 build/default/production/main.o
+                0x000000d4                main
+ .text.read_base
+                0x00000148       0x40 build/default/production/sequence.o
+                0x00000148                read_base
  .text.libgcc.div
                 0x00000188       0x44 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
                 0x00000188                __udivmodsi4
@@ -329,12 +333,12 @@ END GROUP
 .rodata         0x000081d0     0x1d36 load address 0x000001d0
  *(.rodata)
  *(.rodata*)
- .rodata.sequence_data
-                0x000081d0     0x1d30 build/default/production/sequence.o
-                0x000081d0                sequence_data
  .rodata.sars_cov_2_sequence
-                0x00009f00        0x6 build/default/production/sequence.o
-                0x00009f00                sars_cov_2_sequence
+                0x000081d0        0x6 build/default/production/sars_cov_2_sequence.o
+                0x000081d0                sars_cov_2_sequence
+ .rodata.sequence_data
+                0x000081d6     0x1d30 build/default/production/sars_cov_2_sequence.o
+                0x000081d6                sequence_data
  *(.gnu.linkonce.r*)
 
 .data           0x00803800        0x0 load address 0x00001f06
@@ -406,6 +410,7 @@ END GROUP
  .comment       0x00000000       0x30 build/default/production/main.o
                                  0x31 (size before relaxing)
  .comment       0x00000030       0x31 build/default/production/sequence.o
+ .comment       0x00000030       0x31 build/default/production/sars_cov_2_sequence.o
 
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40

@@ -12,12 +12,22 @@
 extern "C" {
 #endif
     
+    #include <stdint.h>
+    
     struct sequence {
         uint8_t *data;
         uint32_t n_bases;
     };
+    
+    typedef enum Base {
+        A = 0, // green
+        C = 1, // blue
+        G = 2, // yellow
+        T = 3  // red
+    } Base;
 
-    const struct sequence sars_cov_2_sequence;
+
+    Base read_base(const struct sequence *seq, uint32_t i);
 
 
 #ifdef	__cplusplus
