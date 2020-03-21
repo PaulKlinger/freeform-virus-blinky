@@ -1,10 +1,3 @@
-/* 
- * File:   main.c
- * Author: kling
- *
- * Created on 17 March 2020, 22:03
- */
-
 #define F_CPU 1000000
 
 #include <stdio.h>
@@ -33,16 +26,17 @@ FUSES =
 
 void show_base(Base b) {
     switch (b) {
-        case A:
+        case A: // green
+            // cast to prevent warning caused by integer promotion to signed...
             VPORTA.OUT = (uint8_t) ~PIN7_bm;
             break;
-        case C:
+        case C: // blue
             VPORTB.OUT = (uint8_t) ~PIN1_bm;
             break;
-        case G:
+        case G: // yellow
             VPORTB.OUT = (uint8_t) ~PIN2_bm;
             break;
-        case T:
+        case T: // red
             VPORTA.OUT = (uint8_t) ~PIN5_bm;
             break;
     }
@@ -54,17 +48,15 @@ void switch_off_leds() {
 }
 
 
-/*
- * 
- */
 int main(int argc, char** argv) {
-    /* disable clock prescaler */
+    /* Configure clock prescaler for 1MHz  */
     _PROTECTED_WRITE(
             CLKCTRL.MCLKCTRLB,
             CLKCTRL_PDIV_16X_gc /* Prescaler division: 16X */
             | CLKCTRL_PEN_bm /* Prescaler enable: enabled */
             );
-    /* set pins to output */
+    
+    /* set LED pins to output */
     VPORTA.DIR = PIN5_bm | PIN7_bm;
     VPORTB.DIR = PIN2_bm | PIN1_bm;
     switch_off_leds();
@@ -78,8 +70,6 @@ int main(int argc, char** argv) {
         i = (i + 1) % (sars_cov_2_sequence.n_bases);
     }
     
-
-
     return (EXIT_SUCCESS);
 }
 

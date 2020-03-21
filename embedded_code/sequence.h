@@ -1,10 +1,3 @@
-/* 
- * File:   sequence.h
- * Author: kling
- *
- * Created on 20 March 2020, 21:31
- */
-
 #ifndef SEQUENCE_H
 #define	SEQUENCE_H
 

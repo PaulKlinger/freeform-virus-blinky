@@ -1,10 +1,3 @@
-/* 
- * File:   sars_cov_2_sequence.h
- * Author: kling
- *
- * Created on 21 March 2020, 16:36
- */
-
 #ifndef SARS_COV_2_SEQUENCE_H
 #define	SARS_COV_2_SEQUENCE_H
 
