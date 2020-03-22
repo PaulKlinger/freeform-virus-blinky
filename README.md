@@ -4,7 +4,7 @@
 
 Freeform electronics thingy vaguely shaped like a SARS-CoV-2 virus blinking out the virus's RNA sequence.
 
-The main body consists of 0.6mm copper wire shaped into circles and soldered together. There's a makeshift hinge on one side so the ball can be opened to change the battery and reprogram the MCU.
+The main body consists of 0.6mm copper wire shaped into circles and soldered together. There's a makeshift hinge on one side so the ball can be opened to change the battery and reprogram the MCU. See the [schematic](schematic.pdf) for the rest of the electronics.
 
 The RNA sequence in [sars-cov-2.fasta](sars-cov-2.fasta) is from [https://www.ncbi.nlm.nih.gov/nuccore/NC_045512](https://www.ncbi.nlm.nih.gov/nuccore/NC_045512). I encoded it into 2 bits per nucleotide ([encode_genome.py](encode_genome.py)) as the MCU has only 16kiB of flash.
 
