@@ -48,7 +48,7 @@ void switch_off_leds() {
 }
 
 
-int main(int argc, char** argv) {
+int main(void) {
     /* Configure clock prescaler for 1MHz  */
     _PROTECTED_WRITE(
             CLKCTRL.MCLKCTRLB,

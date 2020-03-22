@@ -3,7 +3,9 @@ from typing import List, Dict
 
 BASE_MAPPING = {"A": "00", "C": "01", "G": "10", "T": "11"}
 
-def read_sequence(fasta_path) -> str:
+def read_sequence(fasta_path: str) -> str:
+    """ Read .fasta file and return only the sequence, removing comments and newlines
+    """
     l = []
     with open(fasta_path, "r") as f:
         for line in f:
