@@ -18,7 +18,7 @@ Current draw is between 1-5mA depending on which color LEDs are active at the mo
 - 47uF 1206 capacitor
 - [SMD slide switch](https://www.aliexpress.com/item/32967873133.html)
 - [CR2032 Coin cell holder](https://www.aliexpress.com/item/10PCS-Battery-Button-Cell-Holder-Socket-Case-CR2032-battery-holder-2032/32819924096.html)
-- 0.6mm copper wire (maybe 20cm at most)
+- 0.6mm copper wire (maybe 80cm at most)
 - 7 x blue 3mm LED
 - 5 x green 3mm LED
 - 5 x yellow 3mm LED
