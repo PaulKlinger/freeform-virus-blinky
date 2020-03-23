@@ -4,7 +4,7 @@
 
 Freeform electronics thingy vaguely shaped like a SARS-CoV-2 virus blinking out the virus's RNA sequence.
 
-The main body consists of 0.6mm copper wire shaped into circles and soldered together. There's a makeshift hinge on one side so the ball can be opened to change the battery and reprogram the MCU. See the [schematic](schematic.pdf) for the rest of the electronics.
+The main body consists of 0.6mm copper wire shaped into circles and soldered together. There's a makeshift hinge on one side so the ball can be opened to change the battery and reprogram the MCU. See the [schematic](schematic.pdf) for the rest of the electronics. The power switch connects the positive terminal of the battery holder to the outer sphere, the anodes of all the LEDs are soldered on there. The cathode is connected via a resistor per colour and side to the microcontroller.
 
 The main challenge with the assembly is holding the parts in place while soldering, a third hand and some little weights to put on things to hold them down are quite helpful. I started with the two half-spheres, then added the LEDs, then the resistors and finally the MCU and the connections to the other half.
 
