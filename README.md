@@ -23,4 +23,8 @@ Current draw is between 1-5mA depending on which color LEDs are active at the mo
 - 5 x green 3mm LED
 - 5 x yellow 3mm LED
 - 5 x red 3mm LED
+- 3 x 3.3kΩ through hole resistor
+- 1 x 2.2kΩ through hole resistor
+- 2 x 1.1kΩ through hole resistor
+- 2 x 330Ω through hole resistor
 - some 30AWG wire wrapping wire (used to connect the two halves together as it is more flexible than the resistor leads)
