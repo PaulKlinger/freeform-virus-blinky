@@ -70,8 +70,8 @@ OBJECTFILES=${OBJECTDIR}/main.o ${OBJECTDIR}/sequence.o ${OBJECTDIR}/sars_cov_2_
 SOURCEFILES=main.c sequence.c sars_cov_2_sequence.c
 
 # Pack Options 
-PACK_COMPILER_OPTIONS=-I ${DFP_DIR}\include
-PACK_COMMON_OPTIONS=-B ${DFP_DIR}\avr-gcc\dev\attiny1614
+PACK_COMPILER_OPTIONS=-I "${DFP_DIR}/include"
+PACK_COMMON_OPTIONS=-B "${DFP_DIR}/gcc/dev/attiny1614"
 
 
 
@@ -110,38 +110,38 @@ endif
 # ------------------------------------------------------------------------------------
 # Rules for buildStep: compile
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
-${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/main.o: main.c  .generated_files/59e2115cd03262ed909897809f12ea723c86909a.flag .generated_files/ff519b7ef19b01fadc8cddd95f0e29bff01fc36a.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=attiny1614 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/main.o.d" -MT "${OBJECTDIR}/main.o.d" -MT ${OBJECTDIR}/main.o  -o ${OBJECTDIR}/main.o main.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/sequence.o: sequence.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/sequence.o: sequence.c  .generated_files/a8670c677f94ef5fbaa6875fca7c44bfb50f136a.flag .generated_files/ff519b7ef19b01fadc8cddd95f0e29bff01fc36a.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/sequence.o.d 
 	@${RM} ${OBJECTDIR}/sequence.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=attiny1614 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/sequence.o.d" -MT "${OBJECTDIR}/sequence.o.d" -MT ${OBJECTDIR}/sequence.o  -o ${OBJECTDIR}/sequence.o sequence.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/sars_cov_2_sequence.o: sars_cov_2_sequence.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/sars_cov_2_sequence.o: sars_cov_2_sequence.c  .generated_files/7c49508ee4a4963de8419b2f43c1b4ecac359746.flag .generated_files/ff519b7ef19b01fadc8cddd95f0e29bff01fc36a.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/sars_cov_2_sequence.o.d 
 	@${RM} ${OBJECTDIR}/sars_cov_2_sequence.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=attiny1614 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS} -g -DDEBUG  -gdwarf-2  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/sars_cov_2_sequence.o.d" -MT "${OBJECTDIR}/sars_cov_2_sequence.o.d" -MT ${OBJECTDIR}/sars_cov_2_sequence.o  -o ${OBJECTDIR}/sars_cov_2_sequence.o sars_cov_2_sequence.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
 else
-${OBJECTDIR}/main.o: main.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/main.o: main.c  .generated_files/63fb619631fdbab6942a28f09b1b5e6a20ff2e7c.flag .generated_files/ff519b7ef19b01fadc8cddd95f0e29bff01fc36a.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/main.o.d 
 	@${RM} ${OBJECTDIR}/main.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=attiny1614 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/main.o.d" -MT "${OBJECTDIR}/main.o.d" -MT ${OBJECTDIR}/main.o  -o ${OBJECTDIR}/main.o main.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/sequence.o: sequence.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/sequence.o: sequence.c  .generated_files/e49b1be0d110f429b50b37b554e5f7724c09eb13.flag .generated_files/ff519b7ef19b01fadc8cddd95f0e29bff01fc36a.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/sequence.o.d 
 	@${RM} ${OBJECTDIR}/sequence.o 
 	 ${MP_CC}  $(MP_EXTRA_CC_PRE) -mmcu=attiny1614 ${PACK_COMPILER_OPTIONS} ${PACK_COMMON_OPTIONS}  -x c -c -D__$(MP_PROCESSOR_OPTION)__  -funsigned-char -funsigned-bitfields -O1 -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -Wall -MD -MP -MF "${OBJECTDIR}/sequence.o.d" -MT "${OBJECTDIR}/sequence.o.d" -MT ${OBJECTDIR}/sequence.o  -o ${OBJECTDIR}/sequence.o sequence.c  -DXPRJ_default=$(CND_CONF)  $(COMPARISON_BUILD) 
 	
-${OBJECTDIR}/sars_cov_2_sequence.o: sars_cov_2_sequence.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/sars_cov_2_sequence.o: sars_cov_2_sequence.c  .generated_files/1948e6833c460673bb0dc45c5e95d343e7acc68b.flag .generated_files/ff519b7ef19b01fadc8cddd95f0e29bff01fc36a.flag
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/sars_cov_2_sequence.o.d 
 	@${RM} ${OBJECTDIR}/sars_cov_2_sequence.o 

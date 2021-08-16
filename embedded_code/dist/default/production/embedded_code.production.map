@@ -3,14 +3,14 @@ Archive member included to satisfy reference by file (symbol)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_udivmodsi4.o)
                               build/default/production/main.o (__udivmodsi4)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_exit.o)
-                              C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o (exit)
+                              C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o (exit)
 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a(_clear_bss.o)
                               build/default/production/main.o (__do_clear_bss)
 
 Discarded input sections
 
- .data          0x00000000        0x0 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
- .bss           0x00000000        0x0 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .data          0x00000000        0x0 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .bss           0x00000000        0x0 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
  .text          0x00000000        0x0 build/default/production/main.o
  .data          0x00000000        0x0 build/default/production/main.o
  .bss           0x00000000        0x0 build/default/production/main.o
@@ -84,7 +84,7 @@ Linker script and memory map
 
 Address of section .data set to 0x803800
                 0x00008000                __RODATA_PM_OFFSET__ = 0x8000
-LOAD C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+LOAD C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
 LOAD build/default/production/main.o
 LOAD build/default/production/sequence.o
 LOAD build/default/production/sars_cov_2_sequence.o
@@ -96,7 +96,7 @@ START GROUP
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avrxmega3\libgcc.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libm.a
 LOAD c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avrxmega3\libc.a
-LOAD C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3\libattiny1614.a
+LOAD C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3\libattiny1614.a
 END GROUP
                 [0x00000000]                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
                 [0x00803800]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x802000
@@ -201,7 +201,7 @@ END GROUP
 
 .text           0x00000000      0x1d0
  *(.vectors)
- .vectors       0x00000000       0x7c C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .vectors       0x00000000       0x7c C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
                 0x00000000                __vector_default
                 0x00000000                __vectors
  *(.vectors)
@@ -229,13 +229,13 @@ END GROUP
  SORT(*)(.ctors)
  SORT(*)(.dtors)
  *(.init0)
- .init0         0x0000007c        0x0 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .init0         0x0000007c        0x0 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
                 0x0000007c                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000007c        0xc C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .init2         0x0000007c        0xc C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
  *(.init2)
  *(.init3)
  *(.init3)
@@ -252,10 +252,10 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x00000098        0x8 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .init9         0x00000098        0x8 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
  *(.init9)
  *(.text)
- .text          0x000000a0        0x4 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .text          0x000000a0        0x4 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
                 0x000000a0                __vector_22
                 0x000000a0                __vector_28
                 0x000000a0                __vector_1
@@ -330,18 +330,18 @@ END GROUP
  *(.fini0)
                 0x000001d0                _etext = .
 
-.rodata         0x000081d0     0x1d36 load address 0x000001d0
+.rodata         0x000081d0     0x1d3a load address 0x000001d0
  *(.rodata)
  *(.rodata*)
  .rodata.sars_cov_2_sequence
                 0x000081d0        0x6 build/default/production/sars_cov_2_sequence.o
                 0x000081d0                sars_cov_2_sequence
  .rodata.sequence_data
-                0x000081d6     0x1d30 build/default/production/sars_cov_2_sequence.o
+                0x000081d6     0x1d34 build/default/production/sars_cov_2_sequence.o
                 0x000081d6                sequence_data
  *(.gnu.linkonce.r*)
 
-.data           0x00803800        0x0 load address 0x00001f06
+.data           0x00803800        0x0 load address 0x00001f0a
                 [!provide]                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -356,8 +356,8 @@ END GROUP
  *(.bss*)
  *(COMMON)
                 0x00803800                PROVIDE (__bss_end, .)
-                0x00001f06                __data_load_start = LOADADDR (.data)
-                0x00001f06                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00001f0a                __data_load_start = LOADADDR (.data)
+                0x00001f0a                __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x00803800        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
@@ -415,7 +415,7 @@ END GROUP
 .note.gnu.avr.deviceinfo
                 0x00000000       0x40
  .note.gnu.avr.deviceinfo
-                0x00000000       0x40 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+                0x00000000       0x40 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
 
 .note.gnu.build-id
  *(.note.gnu.build-id)
@@ -440,22 +440,22 @@ END GROUP
 
 .debug_info     0x00000000     0x1897
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x1897 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .debug_info    0x00000000     0x1897 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
 
 .debug_abbrev   0x00000000     0x1744
  *(.debug_abbrev)
- .debug_abbrev  0x00000000     0x1744 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .debug_abbrev  0x00000000     0x1744 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
 
 .debug_line     0x00000000      0x151
  *(.debug_line .debug_line.* .debug_line_end)
- .debug_line    0x00000000      0x151 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .debug_line    0x00000000      0x151 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
 
 .debug_frame
  *(.debug_frame)
 
 .debug_str      0x00000000      0xa49
  *(.debug_str)
- .debug_str     0x00000000      0xa49 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/ATtiny_DFP/2.1.63/avr-gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
+ .debug_str     0x00000000      0xa49 C:/Users/kling/.mchp_packs/Microchip/ATtiny_DFP/2.6.122/gcc/dev/attiny1614/avrxmega3/crtattiny1614.o
 
 .debug_loc
  *(.debug_loc)

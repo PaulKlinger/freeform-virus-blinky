@@ -59,7 +59,7 @@ if __name__ == "__main__":
     # check that we generate valid uint8's
     assert all(0 <= b < 256 for b in bytes_sequence)
 
-    for i in range(len(bytes_sequence) // 16):
+    for i in range(len(bytes_sequence) // 16 + 1):
         print(", ".join(str(b) for b in bytes_sequence[i * 16: (i + 1) * 16]) + ",")
     print()
     print(num_bases)
